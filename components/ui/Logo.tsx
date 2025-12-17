@@ -3,32 +3,33 @@ import React from 'react';
 export const Logo: React.FC<{ className?: string }> = ({ className = "w-8 h-8" }) => {
   return (
     <svg 
-      viewBox="0 0 100 60"
-      className={`text-[#CFE0FF] ${className} transition-transform duration-500 group-hover:scale-110`}
+      viewBox="0 0 112 76"
+      className={`${className} transition-transform duration-500 group-hover:scale-110`}
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      preserveAspectRatio="xMidYMid meet"
     >
-      {/* Layered chevrons + central diamond (matches provided mark) */}
+      {/* Monochrome mark (inherits parent text color) */}
       <g
         stroke="currentColor"
         strokeLinecap="round"
         strokeLinejoin="round"
         vectorEffect="non-scaling-stroke"
       >
-        {/* Outer */}
-        <path d="M6 45 L50 10 L94 45" strokeWidth="4" opacity="0.9" />
-        <path d="M6 15 L50 50 L94 15" strokeWidth="4" opacity="0.9" />
+        {/* Outer chevrons */}
+        <path d="M6 44 L56 6 L106 44" strokeWidth="6" opacity="0.92" />
+        <path d="M6 32 L56 70 L106 32" strokeWidth="6" opacity="0.92" />
 
-        {/* Mid */}
-        <path d="M16 45 L50 18 L84 45" strokeWidth="3.2" opacity="0.55" />
-        <path d="M16 15 L50 42 L84 15" strokeWidth="3.2" opacity="0.55" />
+        {/* Middle chevrons */}
+        <path d="M18 44 L56 18 L94 44" strokeWidth="5" opacity="0.62" />
+        <path d="M18 32 L56 58 L94 32" strokeWidth="5" opacity="0.62" />
 
-        {/* Inner */}
-        <path d="M26 45 L50 26 L74 45" strokeWidth="2.6" opacity="0.35" />
-        <path d="M26 15 L50 34 L74 15" strokeWidth="2.6" opacity="0.35" />
+        {/* Inner chevrons */}
+        <path d="M30 44 L56 30 L82 44" strokeWidth="4" opacity="0.42" />
+        <path d="M30 32 L56 46 L82 32" strokeWidth="4" opacity="0.42" />
 
         {/* Center diamond */}
-        <path d="M50 23 L60 30 L50 37 L40 30 Z" strokeWidth="3" opacity="0.8" />
+        <path d="M56 24 L68 38 L56 52 L44 38 Z" strokeWidth="6" opacity="0.85" />
       </g>
     </svg>
   );

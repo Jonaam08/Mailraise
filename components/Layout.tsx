@@ -15,7 +15,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
       <nav className="fixed top-0 left-0 right-0 z-50 border-b border-white/5 bg-black/50 backdrop-blur-md">
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
           <div className="flex items-center gap-3 group cursor-pointer">
-            <Logo className="w-9 h-9" />
+            <Logo className="h-8 w-auto" />
             <span className="font-bold tracking-tight text-xl text-[#F2E9E4] group-hover:text-[#C9ADA7] transition-colors duration-300">Mailraise</span>
           </div>
           <div className="hidden md:flex gap-8 text-sm text-[#9A8C98] font-medium">
@@ -39,7 +39,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
       <footer className="border-t border-white/10 bg-black py-12">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6 text-[#4A4E69] text-sm">
            <div className="flex items-center gap-2">
-             <Logo className="w-5 h-5 opacity-50" />
+             <Logo className="h-5 w-auto opacity-50" />
              <p>© 2025 Mailraise Inc.</p>
            </div>
            <div className="flex gap-6">
