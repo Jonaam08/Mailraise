@@ -13,67 +13,59 @@ export const Logo: React.FC<LogoProps> = ({ className = "h-8 w-auto" }) => {
       role="img"
       aria-label="Mailraise logo"
     >
-      {/* Outer envelope / card */}
-      <rect
-        x="4"
-        y="4"
-        width="492"
-        height="342"
-        rx="32"
-        fill="#191A31"
-      />
+      {/* Note: Colors adapted from brand palette so logo is visible on dark header */}
 
-      {/* Side upper triangles */}
+      {/* Side upper triangles (dark brand purple/blue) */}
       <polygon
-        points="4,4 248,176 4,332"
-        fill="#474C6B"
+        points="4,16 248,176 4,336"
+        fill="#4A4E69"
       />
       <polygon
-        points="496,4 252,176 496,332"
-        fill="#474C6B"
+        points="496,16 252,176 496,336"
+        fill="#4A4E69"
       />
 
       {/* Central diamond */}
       <polygon
-        points="250,110 340,200 250,290 160,200"
-        fill="#9A8CA1"
+        points="250,116 340,206 250,296 160,206"
+        fill="#9A8C98"
       />
 
       {/* Inner dark chevron */}
       <path
-        d="M4 80L250 260L496 80L496 130L250 310L4 130Z"
-        fill="#2D3048"
+        d="M4 84L250 260L496 84L496 132L250 308L4 132Z"
+        fill="#22223B"
       />
 
       {/* Warm taupe chevron */}
       <path
-        d="M4 140L250 300L496 140L496 190L250 340L4 190Z"
+        d="M4 144L250 300L496 144L496 196L250 340L4 196Z"
         fill="#C39F90"
       />
 
       {/* Light bottom triangle */}
       <path
-        d="M36 348L250 190L464 348Z"
+        d="M36 344L250 190L464 344Z"
         fill="#F2E9E4"
       />
 
-      {/* Black envelope strokes */}
+      {/* Envelope strokes (slightly off-white for contrast) */}
       <path
-        d="M4 4L250 190L496 4"
-        stroke="#000000"
-        strokeWidth="16"
+        d="M4 16L250 190L496 16"
+        stroke="#F2E9E4"
+        strokeWidth="12"
         strokeLinejoin="round"
       />
       <path
-        d="M4 348L250 190L496 348"
-        stroke="#000000"
-        strokeWidth="16"
+        d="M4 336L250 190L496 336"
+        stroke="#F2E9E4"
+        strokeWidth="12"
         strokeLinejoin="round"
       />
       <path
-        d="M4 4L4 332L250 190L496 332L496 4"
-        stroke="#000000"
-        strokeWidth="16"
+        d="M4 16L4 328L250 190L496 328L496 16"
+        stroke="#F2E9E4"
+        strokeWidth="12"
         strokeLinejoin="round"
       />
     </svg>
